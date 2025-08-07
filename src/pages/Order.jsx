@@ -1,10 +1,14 @@
-import React,{useContext} from 'react'
+import {useContext} from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title'
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 
 const Order = () => {
   const {products,currency} = useContext(ShopContext)
   return (
+    <div>
+      <Navbar />
     <div className='border-t pt-16'>
       <div className='text-2xl'>
         <Title text1={'MY'} text2={' OREDRS'}/>
@@ -36,6 +40,8 @@ const Order = () => {
           ))
         }
       </div>
+    </div>
+    <Footer />
     </div>
   )
 }

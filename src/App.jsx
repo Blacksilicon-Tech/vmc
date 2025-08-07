@@ -8,10 +8,9 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import PlaceOrder from "./pages/PlaceOrder";
 import Orders from "./pages/Order";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
 import Forgotten from "./components/Forgotten";
+import User from "./pages/User";
 import { ToastContainer,} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -19,10 +18,9 @@ export const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 const App = () => {
   return (
-    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+    <div>
       <ToastContainer/>
-      <Navbar />
-      <SearchBar/>
+     <SearchBar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collection" element={<Collection />} />
@@ -34,9 +32,8 @@ const App = () => {
         <Route path="/place-order" element={<PlaceOrder />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/forgot-password" element={<Forgotten />} />
-
+        <Route path="/user" element={<User />} />
       </Routes>
-      <Footer />
     </div>
   );
 };

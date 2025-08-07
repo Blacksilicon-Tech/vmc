@@ -1,4 +1,3 @@
-import React from "react";
 import { assets } from "../assets/assets";
 
 const OurPolicy = () => {
@@ -11,7 +10,7 @@ const OurPolicy = () => {
       </div>
       <div>
         <img
-          src={assets.quality_icon_icon}
+          src={assets.quality_icon}
           className="w-12 m-auto mb-5"
           alt=""
         />
@@ -20,7 +19,7 @@ const OurPolicy = () => {
       </div>
       <div>
         <img
-          src={assets.support_img_icon}
+          src={assets.support_img}
           className="w-12 m-auto mb-5"
           alt=""
         />

@@ -77,13 +77,13 @@ const Login = () => {
         required
       />
 
-      <div className="flex items-center w-full px-3 py-2 border border-gray-300 rounded-lg justify-between">
+      <div className="flex items-center w-full px-3 py-2 border border-gray-300 rounded-lg h-12">
         <input
           onChange={(e) => setPassword(e.target.value)}
           value={password}
           type={visiblePassword ? "text" : "password"}
+          className="flex items-center w-full px-3 py-2"
           placeholder="Password"
-          className="flex-1 outline-none"
           required
         />
         <div

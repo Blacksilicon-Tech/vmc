@@ -3,12 +3,16 @@ import Title from '../components/Title'
 import CartTotal from '../components/CartTotal'
 import { assets } from '../assets/assets'
 import { ShopContext } from '../context/ShopContext'
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 
 const PlaceOrder = () => {
   const [method,setMethod] = useState('bt')
   const {navigate} = useContext(ShopContext)
 
   return (
+    <div>
+      <Navbar />
     <div className='flex flex-col sm:flex-row justify-between gap-4 pt-5 sm:pt-14 min-h-[80vh] border-t'>
       {/* -----------left Side--------- */}
       <div className='flex flex-col gap-4 w-full sm:max-w-[480px]'>
@@ -39,7 +43,7 @@ const PlaceOrder = () => {
         </div>
 
         <div className='mt-12'>
-          <Title text1={'PAYMENT'} text2={'METHOD'}/>
+          <Title text1={'PAYMENT'} text2={' METHOD'}/>
           {/* ------------ Payment Method Selection ----------- */}
           <div className='flex flex-col gap-3 lg:flex-row'>
             <div onClick={()=>setMethod('stripe')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
@@ -61,6 +65,8 @@ const PlaceOrder = () => {
           </div>
         </div>
       </div>
+    </div>
+      <Footer />
     </div>
   )
 }

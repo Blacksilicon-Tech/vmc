@@ -1,4 +1,4 @@
-import p_img1 from './p_img1.png'
+import p_img1 from './p_img1.jpg'
 import p_img2_1 from './p_img2_1.png'
 import p_img2_2 from './p_img2_2.png'
 import p_img2_3 from './p_img2_3.png'
@@ -53,7 +53,10 @@ import p_img49 from './p_img49.png'
 import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
-
+import Nike from './Nike1.jpg'
+import Nike2 from './Nike2.jpg'
+import Nike3 from './Nike3.jpg'
+import Nike4 from './Nike4.jpg'
 
 import logo from './logo.png'
 import hero_img from './hero_img.png'
@@ -99,10 +102,50 @@ export const assets = {
 
 export const products = [
     {
+        _id: "1",
+        name: "Nike Air Max 270",
+        description: "The Nike Air Max 270 is a stylish and comfortable sneaker that features a large Air unit in the heel for maximum cushioning. It has a sleek design with breathable mesh and synthetic materials, making it perfect for both casual wear and athletic activities.",
+        price: 32000,
+        image: [Nike],
+        category: "Shoes",
+        subCategory: "Sneakers",
+        sizes: ["40", "41", "42", "43", "44", "45", "46", "47"],
+    },
+    {
+        _id: "1",
+        name: "Nike Air Max 270",
+        description: "The Nike Air Max 270 is a stylish and comfortable sneaker that features a large Air unit in the heel for maximum cushioning. It has a sleek design with breathable mesh and synthetic materials, making it perfect for both casual wear and athletic activities.",
+        price: 32000,
+        image: [Nike2],
+        category: "Shoes",
+        subCategory: "Sneakers",
+        sizes: ["40", "41", "42", "43", "44", "45", "46", "47"],
+    },
+    {
+        _id: "1",
+        name: "Nike Air Max 270",
+        description: "The Nike Air Max 270 is a stylish and comfortable sneaker that features a large Air unit in the heel for maximum cushioning. It has a sleek design with breathable mesh and synthetic materials, making it perfect for both casual wear and athletic activities.",
+        price: 32000,
+        image: [Nike3],
+        category: "Shoes",
+        subCategory: "Sneakers",
+        sizes: ["40", "41", "42", "43", "44", "45", "46", "47"],
+    },
+    {
+        _id: "2",
+        name: "Nike Air Max 270",
+        description: "The Nike Air Max 270 is a stylish and comfortable sneaker that features a large Air unit in the heel for maximum cushioning. It has a sleek design with breathable mesh and synthetic materials, making it perfect for both casual wear and athletic activities.",
+        price: 32000,
+        image: [Nike4],
+        category: "Shoes",
+        subCategory: "Sneakers",
+        sizes: ["40", "41", "42", "43", "44", "45", "46", "47"],
+    },
+    {
         _id: "aaaaa",
-        name: "Women Round Neck Cotton Top",
+        name: "Men Round Neck Cotton Top",
         description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
-        price: 100,
+        price: 15000,
         image: [p_img1],
         category: "Women",
         subCategory: "Topwear",

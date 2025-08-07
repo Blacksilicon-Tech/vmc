@@ -3,6 +3,8 @@ import { ShopContext } from "../context/ShopContext";
 import Title from "../components/Title";
 import { assets } from "../assets/assets";
 import CartTotal from "../components/CartTotal";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 
 const Cart = () => {
   const { products, currency, cartItems, updateQuantity, navigate} = useContext(ShopContext);
@@ -24,6 +26,8 @@ const Cart = () => {
     setCartData(tempData);
   }, [cartItems]);
   return (
+    <div>
+      <Navbar />
     <div className="border-t pt-14">
       <div className="text-2xl mb-3">
         <Title text1={"YOUR"} text2={" CART"} />
@@ -80,6 +84,8 @@ const Cart = () => {
           </div>
         </div>
       </div>
+    </div>
+    <Footer />
     </div>
   );
 };
