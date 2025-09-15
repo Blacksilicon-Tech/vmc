@@ -1,4 +1,3 @@
-// src/data/products.js
 export const products = [
 
   {
@@ -17,7 +16,7 @@ export const products = [
     description: "Whole wheat bread or wholemeal bread is a type of bread made using flour that is partly or entirely milled from whole or almost-whole wheat grains.",
     ingredients: "Flour, Sugar, Vanilla, Butter",
     Allergy: "Contains gluten, dairy",
-    category: "Braed",
+    category: "Bread",
   },
   {
     id: 3,
